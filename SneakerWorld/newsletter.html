@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Newsletter</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body class="newsletter-page-body">
+    <header>
+        <nav>
+            <ul>
+                <img src="Images/Logo.png" alt="Logo" id="main-page-logo">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="brands.html">Márkák</a></li>
+                <li><a href="sneakers.html">Sneakerek</a></li>
+                <li><a href="newsletter.html">Hírlevél</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="newspage">
+        <div class="panel">
+            <form id="signup" name="newsletterForm" onsubmit="return validateForm()">
+                <p>Iratkozz fel hírlevelünkre!</p>
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" placeholder="Add meg a neved">
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Add meg az email címed">
+                    </div>
+                    <div>
+                        <label for="accept-conditions" class="accept">Feltételek elfogadása: </label>
+                        <input type="checkbox" id="terms" name="terms">
+                    </div>
+                    <div class="color" id="color">
+                        <label for="colorChooser">Cipő színe:</label>
+                        <input type="color" id="colorChooser" value="#000000">
+                    </div>
+                    <div id="errors"></div>
+                    <div class="field">
+                        <input id="submitButton" type="submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Sneaker World
+    </footer>
+</body>
+
+</html>

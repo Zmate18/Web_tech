@@ -1,0 +1,297 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-page-body {
+    background-image: url(Images/bg.png);
+}
+
+nav {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    padding-right: 3%;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    transition: all .5s;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+nav ul img {
+    padding-right: 50%;
+}
+
+.main-page-table {
+    margin-left: 9%;
+}
+
+.main-page-table td h1 {
+    text-transform: uppercase;
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 5%;
+}
+
+.main-page-table td p {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    margin: 2%;
+}
+
+.main-page-button {
+    background-color: #6EFF25;
+    margin-top: 4%;
+    text-align: center;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    padding: 3% 7%;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+    display: block;
+    border-radius: 25px;
+    transition: .5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.main-page-button:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+#main-page-sneaker {
+    filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+    padding-left: 30%;
+    padding-top: 10%;
+}
+
+.brands-page-title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.brands {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll {
+    width:fit-content;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 1%;
+    border-radius: 25px;
+    margin: 2%;
+    cursor: pointer;
+    position: absolute;
+}
+
+#Adidas {
+    left: 9%;
+}
+
+#Nike {
+    left: 29%;
+}
+
+#Puma {
+    right: 29%;
+}
+
+#Converse {
+    right: 9%;
+}
+
+.content {
+    display: none;
+    margin-top: 10%;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(97, 97, 97);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.sneakers-page-title {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    background-color: #DDDED8;
+}
+
+.sneakers-page-title img {
+    width: 40%;
+    padding-left: 15%;
+}
+
+.sneakers {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding-bottom: 10%;
+}
+
+.collections {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.collections img {
+    width: 20%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter-page-body {
+    background-image: url(Images/bg2.png);
+}
+
+.panel {
+    background-color: #fff;
+	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	width: 850px;
+}
+
+form {
+	padding: 20px;
+}
+
+form p {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.field {
+	margin-bottom: 0.75rem;
+}
+
+.form-fields {
+    padding-left: 25%;
+}
+
+label[for=name],[for=email]  {
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+
+.newspage {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 60vh;
+}
+
+input[type=text] {
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	width: 60%;
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+input::placeholder {
+	color: #c2c2c2;
+}
+
+input:focus[type=text] {
+	outline: none;
+	box-shadow: 0 0 0 2pt rgb(49, 132, 253, 0.5);
+}
+
+#submitButton {
+    width: 64.5%;
+    background: #ff7b00;
+	color: #fff;
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	font-weight: 400;
+	border: none;
+	text-align: center;
+	padding: 0.375rem 0.75rem;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+	background: #ffae00;
+}
+
+.color {
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+#errors {
+    color: red;
+}
